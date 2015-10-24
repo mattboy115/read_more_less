@@ -1,0 +1,18 @@
+.container {
+	margin-bottom: 20px;
+}
+
+.more {
+	width: 600px;
+	overflow: hidden;
+	height: 90px;
+}
+
+.btn {
+	cursor: pointer;
+	width: 500px;
+}
+.btn_text {
+	margin-bottom: -10px;
+}
+
