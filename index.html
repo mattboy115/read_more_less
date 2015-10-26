@@ -4,7 +4,7 @@
 
   <head>
     <title>jQuery Read More/Less Toggle</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"> 
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="js/jquery-1.11.3.min.js"></script> <!--JQuery file link-->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -12,7 +12,7 @@
             $(".btn").click(function () {
                 var val = $(this).data('expanded');
                 $(this).data('expanded', !val);
-                $('p', this).html(val ? "Read More &#8897" : "Read Less &#8896"); //Works with .data method to change button text back and forth.
+                $('p', this).html(val ? "Read More <span>&#8897</span>" : "Close Section <span>&#8896</span>"); //Works with .data method to change button text back and forth.
                 $(".more",$(this).closest('.container')).animate({
                     height: val ? '85' : "300"
                 }); //Changes the height of the closest .more div back and forth.
@@ -23,21 +23,21 @@
 
   <body>
     <div class="container">
+        <h2>This is the First Paragraph</h2>
         <div class="more">
           Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac <a href="#">habitasse</a> platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.  Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac <a href="#">habitasse</a> platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.  Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac <a href="#">habitasse</a> platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.
         </div>
         <div class="btn">
-            <p class="btn_text">Read More &#8897</p>
-            ______________________________________________
+            <p class="btn_text">Read More <span>&#8897</span></p>
         </div>
     </div>
     <div class="container">
+        <h2>This is the Second Paragraph</h2>
         <div class="more">
           Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac <a href="#">habitasse</a> platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.  Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac <a href="#">habitasse</a> platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.  Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac <a href="#">habitasse</a> platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.
         </div>
         <div class="btn">
-            <p class="btn_text">Read More &#8897</p>
-            ______________________________________________
+            <p class="btn_text">Read More <span>&#8897</span></p>
         </div>
     </div>
   </body>
